@@ -24,7 +24,7 @@ export default function Live(props){
   const fetchData = (event) =>{
     console.log("event",event)
     setLoading(true)
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=${event}&maxResults=2&q=${searchQuery}&type=video&key=AIzaSyBnIcmVR-ckI4p-78tZbtwMTkYoVSvNATY`)
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=${event}&maxResults=100&q=${searchQuery}&type=video&key=AIzaSyBnIcmVR-ckI4p-78tZbtwMTkYoVSvNATY`)
     .then((res) => res.json())
     .then((apidata) => {
       console.log("ok")
@@ -140,6 +140,7 @@ export default function Live(props){
        
         )
       }}
+      
       keyExtractor = {item => item.etag}
       />
     }

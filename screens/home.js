@@ -22,7 +22,7 @@ export default function Home(props) {
   const onChangeSearch = query => setSearchQuery(query);
   const [data,setData] = useState([])
   const fetchData = () =>{
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchQuery}&type=video&key=AIzaSyBnIcmVR-ckI4p-78tZbtwMTkYoVSvNATY`)
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=${searchQuery}&type=video&key=AIzaSyBnIcmVR-ckI4p-78tZbtwMTkYoVSvNATY`)
     .then((res) => res.json())
     .then((apidata) => {
       console.log("ok")
