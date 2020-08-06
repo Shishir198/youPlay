@@ -17,7 +17,7 @@ import VideoPlayer from 'expo-video-player'
 export default function Home(props) {
 
   const [searchQuery, setSearchQuery] = React.useState('');
-  const [loading,setLoading] = React.useState(false)
+  const [loading,setLoading] = React.useState(true)
   const [searchModal,setSearchModal] = React.useState(false);
   const onChangeSearch = query => setSearchQuery(query);
   const [data,setData] = useState([])

@@ -17,7 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.shishir.youPlay",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.shishir.youPlay",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
