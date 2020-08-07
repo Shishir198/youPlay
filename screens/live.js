@@ -27,7 +27,7 @@ export default function Live(props){
     fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=${event}&maxResults=100&q=${searchQuery}&type=video&key=AIzaSyBnIcmVR-ckI4p-78tZbtwMTkYoVSvNATY`)
     .then((res) => res.json())
     .then((apidata) => {
-      console.log("ok")
+      console.log("live ok")
       setData(apidata.items)
       setLoading(false)
      

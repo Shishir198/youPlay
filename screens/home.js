@@ -32,8 +32,17 @@ export default function Home(props) {
      
       // setData(response.items)
     })
-    .catch((err) => console.log(err))
+    .catch((err) => Alert.alert('Sorry! Limit Exhausted'))
   }
+  const whenEmpty =() => {
+    return(
+      <View style = {{flex:1,marginTop:Dimensions.get('window').height/2,alignItems:'center'}}>
+        <Text style={{fontWeight:'bold'}}> Sorry ! Limit is Exhausted</Text>
+        <Text style={{fontWeight:'bold'}}> You can start using the app tomorrow</Text>
+      </View>
+    )
+  }
+  console.log(data)
   useEffect(() => {
     fetchData()
   },[])
@@ -95,6 +104,7 @@ export default function Home(props) {
         />
       }}
       keyExtractor = {item => item.etag}
+      ListEmptyComponent = {() => whenEmpty()}
       />
     }
       {/* <ScrollView>
