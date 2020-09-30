@@ -10,5 +10,9 @@ Features Included -
 - Online Live classes 
 - Live,Upcoming and Completed Videos AnyTime AnyWhere.
 
+Tech Stack Used-
+- YouTube's data api V3
+- React Native for making hybrid mobile app
+
 More features to go.!!
 Feel free to contribute.
