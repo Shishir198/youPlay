@@ -1,3 +1,4 @@
+// importing all the required dependencies
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -11,6 +12,7 @@ import Live from './screens/live';
 
 const Tab = createBottomTabNavigator();
 
+// starting of default function
 export default function App() {
   const HomeStack = createStackNavigator();
   const LiveStack = createStackNavigator()
